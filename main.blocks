@@ -1,0 +1,67 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="WpZUSB.%?EAaZ:o+7/yS">dice roll</variable></variables><block type="pxt-on-start" id="cigI[~lj?~OTv:L#4moS" x="24" y="0"><statement name="HANDLER"><block type="controls_repeat_ext" id="5Zv2%5eQc+I}|DV$o7gJ"><value name="TIMES"><shadow type="math_whole_number" id="HLpNu;NnRHi,cm3y^yX}"><field name="NUM">2</field></shadow></value><statement name="DO"><block type="device_show_leds" id="r(SQ|EjzIHR?4+YXSJ*%"><field name="LEDS">`
+        . . . . . 
+        . # # # . 
+        # # . # . 
+        # # # # . 
+        . # . # .
+        `</field><next><block type="device_pause" id="pi6#)v@pG.hvS64mmJ$R"><value name="pause"><shadow type="timePicker" id="i4a63|(dVSesnQkzW}um"><field name="ms">100</field></shadow></value><next><block type="device_show_leds" id="*,%Xe^K-l2aP.!1@Yky}"><field name="LEDS">`
+        # # # # # 
+        # . . . # 
+        . . # . # 
+        . . . . # 
+        # . # . #
+        `</field></block></next></block></next></block></statement></block></statement></block><block type="device_gesture_event" id="I]gpPTTA)y_Z3[.ec$dB" x="331" y="-2"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="variables_set" id="2Os@I8~*#X4h/J2zzeZZ"><field name="VAR" id="WpZUSB.%?EAaZ:o+7/yS">dice roll</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_random" id="p){Alq#uSImZhg:[wO[6"><value name="min"><shadow type="math_number" id="B![9ucDKpp%dopeq]IyG"><field name="NUM">1</field></shadow></value><value name="limit"><shadow type="math_number" id="LhPP@Hnlq7WI/ucQWZPG"><field name="NUM">6</field></shadow></value></block></value><next><block type="controls_if" id="/i4HV1a-BQ8y#F:cs=r#"><mutation elseif="4" else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="^`Zg/E0(3Pm{%d^p(33!"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="variables_get" id="9ByBP/im-w^fPXVje,U1"><field name="VAR" id="WpZUSB.%?EAaZ:o+7/yS">dice roll</field></block></value><value name="B"><shadow type="math_number" id="9PyMyGHUjGe%)[*s@j(P"><field name="NUM">1</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="mhRSJo5H+|,RweM_lvv4"><field name="LEDS">`
+        . . # . . 
+        . # # . . 
+        . . # . . 
+        . . # . . 
+        . # # # .
+        `</field></block></statement><value name="IF1"><block type="logic_compare" id="6Y3T:$#a;90*=s4opMTP"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">2</field></shadow><block type="variables_get" id="K?g+p0C}j0|%L,1C$PYv"><field name="VAR" id="WpZUSB.%?EAaZ:o+7/yS">dice roll</field></block></value><value name="B"><shadow type="math_number" id="LYYG5)LeL#ZWh*0Qylf1"><field name="NUM">2</field></shadow></value></block></value><statement name="DO1"><block type="device_show_leds" id="8VNFs1@dc:?HJrbMF9Lm"><field name="LEDS">`
+        . # # . . 
+        . . . # . 
+        . . # . . 
+        . # . . . 
+        . # # # .
+        `</field></block></statement><value name="IF2"><block type="logic_compare" id="PzekG)VGz2V)Eg6h1A0:"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">3</field></shadow><block type="variables_get" id="okVMwQ~r;(q2I4rLqb`?"><field name="VAR" id="WpZUSB.%?EAaZ:o+7/yS">dice roll</field></block></value><value name="B"><shadow type="math_number" id=";HYO87T=oo^U2++Tp`s^"><field name="NUM">3</field></shadow></value></block></value><statement name="DO2"><block type="device_show_leds" id="i8}YH=ycn=hk1PF#p![="><field name="LEDS">`
+        . # # . . 
+        . . . # . 
+        . # # . . 
+        . . . # . 
+        . # # . .
+        `</field></block></statement><value name="IF3"><block type="logic_compare" id="o[p8p5s3:hMD7;y*]%]D"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">4</field></shadow><block type="variables_get" id="Z}XSgmQ.V2jpOu*sRh6K"><field name="VAR" id="WpZUSB.%?EAaZ:o+7/yS">dice roll</field></block></value><value name="B"><shadow type="math_number" id="dF*1w]B1w6uEf0`r*)j|"><field name="NUM">4</field></shadow></value></block></value><statement name="DO3"><block type="device_show_leds" id="h)74M`AS5TCI}`o6259D"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . # # # # 
+        . . . # . 
+        . . . # .
+        `</field></block></statement><value name="IF4"><block type="logic_compare" id="VKQI;jCj9xFgKQFkhBY+"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">5</field></shadow><block type="variables_get" id="`pJfYx@qgvqdE27bi]#v"><field name="VAR" id="WpZUSB.%?EAaZ:o+7/yS">dice roll</field></block></value><value name="B"><shadow type="math_number" id="Y7,MdMsl[Q=qQ*cC:29s"><field name="NUM">5</field></shadow></value></block></value><statement name="DO4"><block type="device_show_leds" id="yDsu^j.pF*B4/Pdz3:]E"><field name="LEDS">`
+        . # # # . 
+        . # . . . 
+        . # # . . 
+        . . . # . 
+        . # # . .
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="7~L({XZ=avq^$qoHf8hS"><field name="LEDS">`
+        . . # # . 
+        . # . . . 
+        . # # . . 
+        . # . # . 
+        . . # . .
+        `</field></block></statement></block></next></block></statement></block><block type="device_button_event" id="h.vO`IvI^T?ORcn5:g[Z" x="1001" y="8"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="device_show_leds" id="hgO$Y,^)*]hj;]Z4GZR)"><field name="LEDS">`
+        . # # # . 
+        . # . . . 
+        . # # # . 
+        . . . # . 
+        . # # # .
+        `</field></block></statement></block><block type="device_button_event" id="}(L((RM]G)T;}qHqJXAk" x="1007" y="333"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_leds" id="Gsq.x{WH,|?g2nu`eNe0"><field name="LEDS">`
+        . # # # . 
+        . # . # . 
+        . # # . . 
+        . # . # . 
+        . # . . #
+        `</field></block></statement></block><block type="input_logo_event" id="~9l.~,|ONor^LMHB3a/:" x="550" y="379"><field name="action">TouchButtonEvent.Pressed</field></block><block type="device_button_event" id="itVN_:V+)zKn]o-dx-Vx" x="1014" y="658"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="device_show_leds" id="SePmy|9Hjlm1SDThw%%5"><field name="LEDS">`
+        . # # # . 
+        . # . # . 
+        . # # # . 
+        . # . . . 
+        . # . . .
+        `</field></block></statement></block></xml>
