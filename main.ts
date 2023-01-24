@@ -9,26 +9,86 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onGesture(Gesture.Shake, function () {
     for (let index = 0; index < 4; index++) {
-        basic.showNumber(1 ,5)
-basic.showNumber(2, 5)
-basic.showNumber(3, 5)
-basic.showNumber(4, 5)
-basic.showNumber(5, 5)
-basic.showNumber(6, 5)
+        basic.showNumber(1, 5)
+basic.showLeds(`
+            . # # . .
+            . . . # .
+            . . # . .
+            . # . . .
+            . # # # .
+            ` , 5)
+basic.showLeds(`
+            . # # . .
+            . . . # .
+            . # # . .
+            . . . # .
+            . # # . .
+            ` , 5)
+basic.showLeds(`
+            . # . # .
+            . # . # .
+            . # # # .
+            . . . # .
+            . . . # .
+            ` , 5)
+basic.showLeds(`
+            . # # # .
+            . # . . .
+            . # # . .
+            . . . # .
+            . # # . .
+            ` , 5)
+basic.showLeds(`
+            . . # . .
+            . # . . .
+            . # # . .
+            . # . # .
+            . . # . .
+            ` , 5)
     }
     dice_roll = randint(1, 6)
     if (dice_roll == 1) {
         basic.showNumber(1)
     } else if (dice_roll == 2) {
-        basic.showNumber(2)
+        basic.showLeds(`
+            . # # . .
+            . . . # .
+            . . # . .
+            . # . . .
+            . # # # .
+            `)
     } else if (dice_roll == 3) {
-        basic.showNumber(3)
+        basic.showLeds(`
+            . # # . .
+            . . . # .
+            . # # . .
+            . . . # .
+            . # # . .
+            `)
     } else if (dice_roll == 4) {
-        basic.showNumber(4)
+        basic.showLeds(`
+            . # . # .
+            . # . # .
+            . # # # .
+            . . . # .
+            . . . # .
+            `)
     } else if (dice_roll == 5) {
-        basic.showNumber(5)
+        basic.showLeds(`
+            . # # # .
+            . # . . .
+            . # # . .
+            . . . # .
+            . # # . .
+            `)
     } else {
-        basic.showNumber(6)
+        basic.showLeds(`
+            . . # . .
+            . # . . .
+            . # # . .
+            . # . # .
+            . . # . .
+            `)
     }
 })
 input.onGesture(Gesture.LogoDown, function () {
@@ -39,7 +99,14 @@ input.onGesture(Gesture.LogoDown, function () {
             . . # . .
             . . . # .
             . # # . .
-            `)
+            `, 50)
+basic.showLeds(`
+            # # . # #
+            # # # # #
+            # # . # #
+            # # # . #
+            # . . # #
+            `, 50)
     }
 })
 let dice_roll = 0
