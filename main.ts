@@ -1,31 +1,21 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showLeds(`
-        . # # # .
-        . # . # .
-        . # # . .
-        . # . # .
-        . # . . #
-        `)
+    basic.showString("Rock!")
 })
 input.onButtonPressed(Button.AB, function () {
-    basic.showLeds(`
-        . # # # .
-        . # . . .
-        . # # # .
-        . . . # .
-        . # # # .
-        `)
+    basic.showString("Scissors!")
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showLeds(`
-        . # # # .
-        . # . # .
-        . # # # .
-        . # . . .
-        . # . . .
-        `)
+    basic.showString("Paper!")
 })
 input.onGesture(Gesture.Shake, function () {
+    for (let index = 0; index < 4; index++) {
+        basic.showNumber(1 ,5)
+basic.showNumber(2, 5)
+basic.showNumber(3, 5)
+basic.showNumber(4, 5)
+basic.showNumber(5, 5)
+basic.showNumber(6, 5)
+    }
     dice_roll = randint(1, 6)
     if (dice_roll == 1) {
         basic.showLeds(`
@@ -77,10 +67,19 @@ input.onGesture(Gesture.Shake, function () {
             `)
     }
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-	
+input.onGesture(Gesture.LogoDown, function () {
+    for (let index = 0; index < 4; index++) {
+        basic.showLeds(`
+            . . # . .
+            . . . . .
+            . . # . .
+            . . . # .
+            . # # . .
+            `)
+    }
 })
 let dice_roll = 0
+music.playMelody("E B C5 A B G A F ", 120)
 for (let index = 0; index < 2; index++) {
     basic.showLeds(`
         . . . . .
@@ -98,3 +97,10 @@ for (let index = 0; index < 2; index++) {
         # . # . #
         `)
 }
+basic.showLeds(`
+    . . . . .
+    . # # # .
+    # # . # .
+    # # # # .
+    . # . # .
+    `)
