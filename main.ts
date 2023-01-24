@@ -18,53 +18,17 @@ basic.showNumber(6, 5)
     }
     dice_roll = randint(1, 6)
     if (dice_roll == 1) {
-        basic.showLeds(`
-            . . # . .
-            . # # . .
-            . . # . .
-            . . # . .
-            . # # # .
-            `)
+        basic.showNumber(1)
     } else if (dice_roll == 2) {
-        basic.showLeds(`
-            . # # . .
-            . . . # .
-            . . # . .
-            . # . . .
-            . # # # .
-            `)
+        basic.showNumber(2)
     } else if (dice_roll == 3) {
-        basic.showLeds(`
-            . # # . .
-            . . . # .
-            . # # . .
-            . . . # .
-            . # # . .
-            `)
+        basic.showNumber(3)
     } else if (dice_roll == 4) {
-        basic.showLeds(`
-            . # . # .
-            . # . # .
-            . # # # #
-            . . . # .
-            . . . # .
-            `)
+        basic.showNumber(4)
     } else if (dice_roll == 5) {
-        basic.showLeds(`
-            . # # # .
-            . # . . .
-            . # # . .
-            . . . # .
-            . # # . .
-            `)
+        basic.showNumber(5)
     } else {
-        basic.showLeds(`
-            . . # # .
-            . # . . .
-            . # # . .
-            . # . # .
-            . . # . .
-            `)
+        basic.showNumber(6)
     }
 })
 input.onGesture(Gesture.LogoDown, function () {
